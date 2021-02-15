@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AnimalShelterDesctopApp"
       mc:Ignorable="d" 
-      d:DesignHeight="1000" d:DesignWidth="1200"
+      d:DesignHeight="600" d:DesignWidth="1000"
       Title="AnimalShelterHome">
-    <Grid OpacityMask="#FFEA4B4B" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+    <Grid OpacityMask="#FFEA4B4B" Background="White">
         <Button Content="Magazyn" HorizontalAlignment="Left" Margin="51,155,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Klienci" HorizontalAlignment="Left" Margin="283,155,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <Button Content="Psy" HorizontalAlignment="Left" Margin="51,208,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
