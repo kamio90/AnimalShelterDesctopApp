@@ -28,37 +28,38 @@ namespace AnimalShelterDesctopApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             AnimalShelterStorage animalShelterStoragePage = new AnimalShelterStorage();
-            this.NavigationService.Navigate(animalShelterStoragePage);
+            this.NavigationService?.Navigate(animalShelterStoragePage);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             AnimalShelterClients animalShelterClientsPage = new AnimalShelterClients();
-            this.NavigationService.Navigate(animalShelterClientsPage);
+            this.NavigationService?.Navigate(animalShelterClientsPage);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             AnimalShelterDogs animalShelterDogsPage = new AnimalShelterDogs();
-            this.NavigationService.Navigate(animalShelterDogsPage);
+            this.NavigationService?.Navigate(animalShelterDogsPage);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             AnimalShelterFood animalShelterFoodPage = new AnimalShelterFood();
-            this.NavigationService.Navigate(animalShelterFoodPage);
+            this.NavigationService?.Navigate(animalShelterFoodPage);
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             AnimalShelterOrders animalShelterOrdersPage = new AnimalShelterOrders();
-            this.NavigationService.Navigate(animalShelterOrdersPage);
+            var navigationService = this.NavigationService;
+            navigationService?.Navigate(animalShelterOrdersPage);
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             AnimalShelterVolunteer animalShelterVolunteerPage = new AnimalShelterVolunteer();
-            this.NavigationService.Navigate(animalShelterVolunteerPage);
+            this.NavigationService?.Navigate(animalShelterVolunteerPage);
         }
     }
 }
