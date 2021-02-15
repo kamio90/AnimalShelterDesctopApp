@@ -87,8 +87,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AnimalShelterDogs.xaml.cs">
+      <DependentUpon>AnimalShelterDogs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalShelterFood.xaml.cs">
+      <DependentUpon>AnimalShelterFood.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalShelterOrders.xaml.cs">
+      <DependentUpon>AnimalShelterOrders.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AnimalShelterStorage.xaml.cs">
       <DependentUpon>AnimalShelterStorage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalShelterVolunteer.xaml.cs">
+      <DependentUpon>AnimalShelterVolunteer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clients.cs">
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
@@ -115,7 +127,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AnimalShelterDogs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimalShelterFood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimalShelterOrders.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AnimalShelterStorage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimalShelterVolunteer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
