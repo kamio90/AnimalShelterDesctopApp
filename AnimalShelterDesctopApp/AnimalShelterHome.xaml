@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:AnimalShelterDesctopApp"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="500"
-      Title="AnimalShelter - Home">
+      Title="AnimalShelterHome">
 
     <Grid>
         
