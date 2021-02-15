@@ -79,6 +79,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnimalShelterDatabaseModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.cs">
+      <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dogs.cs">
+      <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Food.cs">
+      <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs">
+      <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer.cs">
+      <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -140,6 +163,12 @@
     <Content Include="AnimalShelterDatabaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AnimalShelterDatabaseModel.Context.cs</LastGenOutput>
+      <DependentUpon>AnimalShelterDatabaseModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="AnimalShelterDatabaseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AnimalShelterDatabaseModel.edmx</DependentUpon>
+      <LastGenOutput>AnimalShelterDatabaseModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
