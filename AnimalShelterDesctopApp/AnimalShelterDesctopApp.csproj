@@ -79,6 +79,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnimalShelterClients.xaml.cs">
+      <DependentUpon>AnimalShelterClients.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AnimalShelterDatabaseModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +111,10 @@
     <Compile Include="Volunteer.cs">
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
+    <Page Include="AnimalShelterClients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AnimalShelterStorage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
