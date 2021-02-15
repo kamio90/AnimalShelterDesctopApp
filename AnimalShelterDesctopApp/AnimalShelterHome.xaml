@@ -60,5 +60,6 @@
         </Button>
         <Image Margin="601,2,0,0" Source="pexels-public-domain-pictures-40984.jpg" Stretch="Fill"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Obsługa Schroniska" VerticalAlignment="Top" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="72" Width="470"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="10,566,0,0" TextWrapping="Wrap" Text="Wersja Aplikacji 1.0 beta" VerticalAlignment="Top" Width="184" FontSize="14" FontFamily="Segoe UI Black" BorderBrush="{x:Null}"/>
     </Grid>
 </Page>
