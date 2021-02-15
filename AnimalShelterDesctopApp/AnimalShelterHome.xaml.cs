@@ -48,5 +48,11 @@ namespace AnimalShelterDesctopApp
             AnimalShelterFood animalShelterFoodPage = new AnimalShelterFood();
             this.NavigationService.Navigate(animalShelterFoodPage);
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            AnimalShelterOrders animalShelterOrdersPage = new AnimalShelterOrders();
+            this.NavigationService.Navigate(animalShelterOrdersPage);
+        }
     }
 }
