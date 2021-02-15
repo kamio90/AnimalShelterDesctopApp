@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ec2072d2d5c34743bf664fd83687234d" Name="Diagram1">
+        <EntityTypeShape EntityType="AnimalShelterDatabaseModel.Clients" Width="1.5" PointX="2.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnimalShelterDatabaseModel.Dogs" Width="1.5" PointX="2.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnimalShelterDatabaseModel.Food" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnimalShelterDatabaseModel.Orders" Width="1.5" PointX="5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnimalShelterDatabaseModel.Storage" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AnimalShelterDatabaseModel.Volunteer" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="AnimalShelterDatabaseModel.FK_Orders_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="AnimalShelterDatabaseModel.FK_Orders_Dogs" ManuallyRouted="false" />
+        <AssociationConnector Association="AnimalShelterDatabaseModel.FK_Storage_Food" ManuallyRouted="false" />
+        <AssociationConnector Association="AnimalShelterDatabaseModel.FK_Storage_Volunteer" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
