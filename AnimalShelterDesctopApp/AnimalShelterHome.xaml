@@ -7,8 +7,5 @@
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="500"
       Title="AnimalShelterHome">
-
-    <Grid>
-        
-    </Grid>
+    <Grid OpacityMask="#FFEA4B4B" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
 </Page>

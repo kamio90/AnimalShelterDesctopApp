@@ -8,7 +8,5 @@
       d:DesignHeight="350" d:DesignWidth="500"
       Title="AnimalShelterStorage">
 
-    <Grid>
-        
-    </Grid>
+    <Grid Background="White"/>
 </Page>

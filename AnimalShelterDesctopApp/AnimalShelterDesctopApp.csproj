@@ -84,6 +84,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AnimalShelterStorage.xaml.cs">
+      <DependentUpon>AnimalShelterStorage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Clients.cs">
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
@@ -96,12 +99,19 @@
     <Compile Include="Orders.cs">
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AnimalShelterHome.xaml.cs">
+      <DependentUpon>AnimalShelterHome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Storage.cs">
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Volunteer.cs">
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
+    <Page Include="AnimalShelterStorage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -124,6 +134,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="AnimalShelterHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
