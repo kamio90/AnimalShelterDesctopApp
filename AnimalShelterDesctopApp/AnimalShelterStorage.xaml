@@ -13,5 +13,14 @@
         <CollectionViewSource x:Key="ordersViewSource" Source="{Binding Orders, Source={StaticResource animalShelterDatabaseDataSet}}"/>
     </Page.Resources>
 
-    <Grid Background="White" DataContext="{StaticResource storageViewSource}"/>
+    <Grid Background="White" DataContext="{StaticResource storageViewSource}">
+        <DataGrid x:Name="storageDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="328,10,10,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idColumn" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="foodRefColumn" Binding="{Binding FoodRef}" Header="Food Ref" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="volunteerRefColumn" Binding="{Binding VolunteerRef}" Header="Volunteer Ref" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="132,70,0,0" TextWrapping="Wrap" Text="Magazyn" VerticalAlignment="Top"/>
+    </Grid>
 </Page>
