@@ -7,8 +7,20 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AnimalShelterFood">
+    <Page.Resources>
+        <local:AnimalShelterDatabaseDataSet x:Key="animalShelterDatabaseDataSet"/>
+        <CollectionViewSource x:Key="foodViewSource" Source="{Binding Food, Source={StaticResource animalShelterDatabaseDataSet}}"/>
+    </Page.Resources>
 
-    <Grid Background="White">
-        
+    <Grid Background="White" DataContext="{StaticResource foodViewSource}">
+        <DataGrid x:Name="foodDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="520,10,10,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idColumn" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="countColumn" Binding="{Binding Count}" Header="Count" Width="SizeToHeader"/>
+                <DataGridTextColumn x:Name="nameColumn" Binding="{Binding Name}" Header="Name" Width="SizeToHeader"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="213,32,0,0" TextWrapping="Wrap" Text="Jedzenie" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>
