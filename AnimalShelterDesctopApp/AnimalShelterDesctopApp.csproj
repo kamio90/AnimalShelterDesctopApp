@@ -82,6 +82,11 @@
     <Compile Include="AnimalShelterClients.xaml.cs">
       <DependentUpon>AnimalShelterClients.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AnimalShelterDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimalShelterDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AnimalShelterDatabaseModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -196,6 +201,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AnimalShelterDatabaseModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="AnimalShelterDatabaseDataSet.xsc">
+      <DependentUpon>AnimalShelterDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnimalShelterDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimalShelterDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnimalShelterDatabaseDataSet.xss">
+      <DependentUpon>AnimalShelterDatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="AnimalShelterDatabaseModel.edmx.diagram">
       <DependentUpon>AnimalShelterDatabaseModel.edmx</DependentUpon>
     </None>
@@ -235,6 +251,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
