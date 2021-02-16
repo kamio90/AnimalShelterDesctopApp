@@ -1,12 +1,17 @@
 ﻿<Page x:Class="AnimalShelterDesctopApp.AnimalShelterStorage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:AnimalShelterDesctopApp"
-      mc:Ignorable="d" 
-      d:DesignHeight="350" d:DesignWidth="500"
-      Title="AnimalShelterStorage">
+      mc:Ignorable="d"
+      d:DesignHeight="350"
+      Title="AnimalShelterStorage" Width="676.265">
+    <Page.Resources>
+        <local:AnimalShelterDatabaseDataSet x:Key="animalShelterDatabaseDataSet"/>
+        <CollectionViewSource x:Key="storageViewSource" Source="{Binding Storage, Source={StaticResource animalShelterDatabaseDataSet}}"/>
+        <CollectionViewSource x:Key="ordersViewSource" Source="{Binding Orders, Source={StaticResource animalShelterDatabaseDataSet}}"/>
+    </Page.Resources>
 
-    <Grid Background="White"/>
+    <Grid Background="White" DataContext="{StaticResource storageViewSource}"/>
 </Page>
