@@ -21,6 +21,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <TextBlock HorizontalAlignment="Left" Margin="204,33,0,0" TextWrapping="Wrap" Text="Psy" VerticalAlignment="Top"/>
+        <Button Content="Dodaj Psa" HorizontalAlignment="Left" Margin="45,170,0,0" VerticalAlignment="Top" Width="75" Click="AddDogButtonClick"/>
 
     </Grid>
 </Page>
