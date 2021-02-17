@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +21,18 @@ namespace AnimalShelterDesctopApp
     /// </summary>
     public partial class AnimalShelterDogs : Page
     {
+        private AnimalShelterDatabaseDataSet _databaseEntities = new AnimalShelterDatabaseDataSet();
+
         public AnimalShelterDogs()
         {
             InitializeComponent();
+            MessageBox.Show(_databaseEntities.Dogs.NameColumn.ToString());
+        }
+
+        private void AddDogButtonClick(object sender, RoutedEventArgs e)
+        {
+            AnimalShelterAddDogPage animalShelterAddDogPage = new AnimalShelterAddDogPage();
+            this.NavigationService?.Navigate(animalShelterAddDogPage);
         }
     }
 }
