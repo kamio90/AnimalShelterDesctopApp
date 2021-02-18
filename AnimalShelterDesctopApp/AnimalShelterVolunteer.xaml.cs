@@ -20,15 +20,24 @@ namespace AnimalShelterDesctopApp
     /// </summary>
     public partial class AnimalShelterVolunteer : Page
     {
+        private readonly AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
         public AnimalShelterVolunteer()
         {
             InitializeComponent();
+            this.UpdateVolunteer();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             AnimalShelterAddVolunteerPage animalShelterAddVolunteerPage = new AnimalShelterAddVolunteerPage();
             NavigationService?.Navigate(animalShelterAddVolunteerPage);
+        }
+
+        private void UpdateVolunteer()
+        {
+            var databaseData = from row in _databaseEntities.Volunteer select row;
+            this.volunteerDataGrid.ItemsSource = databaseData.ToList();
         }
     }
 }
