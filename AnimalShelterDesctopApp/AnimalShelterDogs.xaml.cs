@@ -21,7 +21,7 @@ namespace AnimalShelterDesctopApp
     /// </summary>
     public partial class AnimalShelterDogs : Page
     {
-        private AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
+        private readonly AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
 
         /// <summary>
         /// Constructor of class AnimalShelterDogs
