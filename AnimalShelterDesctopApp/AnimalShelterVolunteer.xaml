@@ -21,6 +21,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <TextBlock HorizontalAlignment="Left" Margin="143,49,0,0" TextWrapping="Wrap" Text="Wolontariusze" VerticalAlignment="Top"/>
+        <Button Content="Dodaj Wolontariusza" HorizontalAlignment="Left" Margin="133,323,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Page>
