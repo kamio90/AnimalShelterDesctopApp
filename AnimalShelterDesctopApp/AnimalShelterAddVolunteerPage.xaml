@@ -12,7 +12,8 @@
         <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="129,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Imie:" VerticalAlignment="Top" Width="120" Margin="129,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
         <TextBox x:Name="TextBoxSurname" HorizontalAlignment="Left" Height="23" Margin="414,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Imie:" VerticalAlignment="Top" Width="120" Margin="414,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
-        <Button Content="Dodaj Wolontariusza" HorizontalAlignment="Left" Margin="227,237,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Nazwisko:" VerticalAlignment="Top" Width="120" Margin="414,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
+        <Button Content="Dodaj Wolontariusza" HorizontalAlignment="Left" Margin="222,191,0,0" VerticalAlignment="Top" Width="224" Click="Button_Click" Background="White" FontSize="22"/>
+        <Image Margin="159,250,285,0" Source="pexels-matthias-zomer-98014.jpg" Stretch="Fill"/>
     </Grid>
 </Page>
