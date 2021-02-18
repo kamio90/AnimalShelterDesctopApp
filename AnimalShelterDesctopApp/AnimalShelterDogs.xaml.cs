@@ -17,22 +17,31 @@ using System.Windows.Shapes;
 namespace AnimalShelterDesctopApp
 {
     /// <summary>
-    /// Logika interakcji dla klasy AnimalShelterDogs.xaml
+    /// Logic for class AnimalShelterDogs
     /// </summary>
     public partial class AnimalShelterDogs : Page
     {
-        private AnimalShelterDatabaseDataSet _databaseEntities = new AnimalShelterDatabaseDataSet();
+        private AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
 
+        /// <summary>
+        /// Constructor of class AnimalShelterDogs
+        /// </summary>
         public AnimalShelterDogs()
         {
             InitializeComponent();
-            MessageBox.Show(_databaseEntities.Dogs.NameColumn.ToString());
+            this.UpdateDogs();
         }
 
         private void AddDogButtonClick(object sender, RoutedEventArgs e)
         {
             AnimalShelterAddDogPage animalShelterAddDogPage = new AnimalShelterAddDogPage();
             this.NavigationService?.Navigate(animalShelterAddDogPage);
+        }
+
+        private void UpdateDogs()
+        {
+            var databaseData = from row in _databaseEntities.Dogs select row;
+            this.dogsDataGrid.ItemsSource = databaseData.ToList();
         }
     }
 }
