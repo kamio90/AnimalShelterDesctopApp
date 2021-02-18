@@ -14,6 +14,7 @@
         <TextBlock HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Imie:" VerticalAlignment="Top" Width="120" Margin="100,123,0,0"/>
         <TextBox x:Name="TextBoxAge" HorizontalAlignment="Left" Height="23" Margin="100,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Wiek:" VerticalAlignment="Top" Margin="100,255,0,0"/>
+        <Button Content="Dodaj Psa" HorizontalAlignment="Left" Margin="100,360,0,0" VerticalAlignment="Top" Width="75" Click="AddDogButtonClick"/>
 
     </Grid>
 </Page>

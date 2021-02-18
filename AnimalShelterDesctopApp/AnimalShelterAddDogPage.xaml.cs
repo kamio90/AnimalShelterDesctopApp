@@ -20,9 +20,26 @@ namespace AnimalShelterDesctopApp
     /// </summary>
     public partial class AnimalShelterAddDogPage : Page
     {
+        private AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
         public AnimalShelterAddDogPage()
         {
             InitializeComponent();
+        }
+
+        private void AddDogButtonClick(object sender, RoutedEventArgs e)
+        {
+            if (TextBoxAge.Text == "" && TextBoxName.Text == "")
+            {
+                MessageBox.Show("Pola nie mogą być puste");
+                return;
+            };
+            var newDog = new Dogs()
+            {
+                Age = (int.Parse(TextBoxAge.Text)),
+                Name = TextBoxName.Text
+            };
+            _databaseEntities.Dogs.Add(newDog);
+            _databaseEntities.SaveChanges();
         }
     }
 }
