@@ -24,6 +24,7 @@ namespace AnimalShelterDesctopApp
         public AnimalShelterClients()
         {
             InitializeComponent();
+            this.UpdateClients();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -33,7 +34,7 @@ namespace AnimalShelterDesctopApp
             NavigationService?.Navigate(animalShelterClientsAddClientsPage);
         }
 
-        private void updateClients()
+        private void UpdateClients()
         {
             var databaseData = from row in _databaseEntities.Clients select row;
             this.clientsDataGrid.ItemsSource = databaseData.ToList();
