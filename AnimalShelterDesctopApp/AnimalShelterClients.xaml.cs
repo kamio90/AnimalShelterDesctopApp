@@ -29,7 +29,7 @@ namespace AnimalShelterDesctopApp
         {
             AnimalShelterClientsAddClientsPage animalShelterClientsAddClientsPage =
                 new AnimalShelterClientsAddClientsPage();
-            NavigationService.Navigate(animalShelterClientsAddClientsPage);
+            NavigationService?.Navigate(animalShelterClientsAddClientsPage);
         }
     }
 }
