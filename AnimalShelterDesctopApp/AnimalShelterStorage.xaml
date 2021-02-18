@@ -21,6 +21,6 @@
                 <DataGridTextColumn x:Name="volunteerRefColumn" Binding="{Binding VolunteerRef}" Header="Volunteer Ref" Width="SizeToHeader"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock HorizontalAlignment="Left" Margin="132,70,0,0" TextWrapping="Wrap" Text="Magazyn" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="2,133,0,0" TextWrapping="Wrap" Text="Magazyn" VerticalAlignment="Top" FontSize="72" FontFamily="Segoe UI Black"/>
     </Grid>
 </Page>
