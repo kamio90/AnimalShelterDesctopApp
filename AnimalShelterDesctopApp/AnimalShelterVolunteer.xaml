@@ -20,8 +20,9 @@
                 <DataGridTextColumn x:Name="surnameColumn" Binding="{Binding Surname}" Header="Surname" Width="SizeToHeader"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock HorizontalAlignment="Left" Margin="143,49,0,0" TextWrapping="Wrap" Text="Wolontariusze" VerticalAlignment="Top"/>
-        <Button Content="Dodaj Wolontariusza" HorizontalAlignment="Left" Margin="133,323,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="127,349,0,0" TextWrapping="Wrap" Text="Wolontariusze" VerticalAlignment="Top" FontSize="36" FontFamily="Segoe UI Black"/>
+        <Button Content="Dodaj Wolontariusza" HorizontalAlignment="Left" Margin="10,397,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click" Background="White" Height="43" Padding="1" UseLayoutRounding="False" BorderThickness="0,0,0,1" SnapsToDevicePixels="True"/>
+        <Image Margin="10,10,646,218" Source="pexels-c-technical-6568483.jpg" Stretch="Fill"/>
 
     </Grid>
 </Page>

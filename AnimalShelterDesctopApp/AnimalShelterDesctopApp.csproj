@@ -264,6 +264,7 @@
       <DependentUpon>AnimalShelterDatabaseModel.edmx</DependentUpon>
       <LastGenOutput>AnimalShelterDatabaseModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="pexels-c-technical-6568483.jpg" />
     <Resource Include="pexels-aleksandar-pasaric-2940256 %281%29.jpg" />
     <Resource Include="pexels-elly-fairytale-5859807.jpg" />
     <Resource Include="pexels-matthias-zomer-98014.jpg" />
