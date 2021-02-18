@@ -1,5 +1,4 @@
-﻿- [ ] Duplicate rows after adding soo much items
+﻿- [x] Duplicate rows after adding soo much items
 - [x]  XML Comments
-- [ ] Message that Item was added
-- [ ] Decoration
-- [ ] App instalator
+- [x] Message that Item was added
+- [x] Decoration
