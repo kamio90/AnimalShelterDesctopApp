@@ -20,9 +20,16 @@ namespace AnimalShelterDesctopApp
     /// </summary>
     public partial class AnimalShelterFood : Page
     {
+
         public AnimalShelterFood()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AnimalShelterAddFoodPage animalShelterAddFoodPage = new AnimalShelterAddFoodPage();
+            NavigationService.Navigate(animalShelterAddFoodPage);
         }
     }
 }
