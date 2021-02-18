@@ -29,7 +29,7 @@ namespace AnimalShelterDesctopApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             AnimalShelterAddFoodPage animalShelterAddFoodPage = new AnimalShelterAddFoodPage();
-            NavigationService.Navigate(animalShelterAddFoodPage);
+            NavigationService?.Navigate(animalShelterAddFoodPage);
         }
     }
 }
