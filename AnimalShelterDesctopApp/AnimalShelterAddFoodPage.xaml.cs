@@ -20,6 +20,7 @@ namespace AnimalShelterDesctopApp
     /// </summary>
     public partial class AnimalShelterAddFoodPage : Page
     {
+        private readonly AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
         public AnimalShelterAddFoodPage()
         {
             InitializeComponent();
@@ -27,7 +28,19 @@ namespace AnimalShelterDesctopApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (TextBoxName.Text == "" || TextBoxCount.Text == "")
+            {
+                MessageBox.Show("Pola nie mogą być puste");
+                return;
+            }
 
+            var newFood = new Food()
+            {
+                Count = Int32.Parse(TextBoxCount.Text),
+                Name = TextBoxName.Text
+            };
+            _databaseEntities.Food.Add(newFood);
+            _databaseEntities.SaveChanges();
         }
     }
 }
