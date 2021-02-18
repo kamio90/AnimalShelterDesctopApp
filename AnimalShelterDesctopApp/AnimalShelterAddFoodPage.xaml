@@ -9,10 +9,11 @@
       Title="AnimalShelterAddFoodPage">
 
     <Grid Background="White">
-        <TextBox x:Name="TextBoxCount" HorizontalAlignment="Left" Height="23" Margin="129,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Ilość" VerticalAlignment="Top" Width="120" Margin="129,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
-        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="380,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Nazwa" VerticalAlignment="Top" Width="120" Margin="380,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
-        <Button Content="Dodaj Jedzenie" HorizontalAlignment="Left" Margin="274,206,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click"/>
+        <TextBox x:Name="TextBoxCount" HorizontalAlignment="Left" Height="23" Margin="76,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Ilość" VerticalAlignment="Top" Width="120" Margin="76,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="510,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Nazwa" VerticalAlignment="Top" Width="120" Margin="510,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
+        <Button Content="Dodaj Jedzenie" HorizontalAlignment="Left" Margin="254,181,0,0" VerticalAlignment="Top" Width="194" Click="Button_Click" Background="White" FontSize="22" />
+        <Image Margin="201,240,299,10" Source="pexels-daria-shevtsova-1095550.jpg" Stretch="Fill"/>
     </Grid>
 </Page>
