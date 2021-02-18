@@ -20,6 +20,7 @@ namespace AnimalShelterDesctopApp
     /// </summary>
     public partial class AnimalShelterClients : Page
     {
+        private readonly AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
         public AnimalShelterClients()
         {
             InitializeComponent();
@@ -30,6 +31,12 @@ namespace AnimalShelterDesctopApp
             AnimalShelterClientsAddClientsPage animalShelterClientsAddClientsPage =
                 new AnimalShelterClientsAddClientsPage();
             NavigationService?.Navigate(animalShelterClientsAddClientsPage);
+        }
+
+        private void updateClients()
+        {
+            var databaseData = from row in _databaseEntities.Clients select row;
+            this.clientsDataGrid.ItemsSource = databaseData.ToList();
         }
     }
 }
