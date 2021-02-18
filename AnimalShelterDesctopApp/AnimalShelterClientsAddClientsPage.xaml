@@ -15,5 +15,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="50,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"><Run Text="Podaj "/><Run Text="Nazwisko"/></TextBlock>
         <TextBox x:Name="TextBoxAddress" HorizontalAlignment="Left" Height="23" Margin="34,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="50,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"><Run Text="Podaj "/><Run Text="Adres"/></TextBlock>
+        <Button Content="Dodaj klienta" HorizontalAlignment="Left" Margin="181,356,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Page>
