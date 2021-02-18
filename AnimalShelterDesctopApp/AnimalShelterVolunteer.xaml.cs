@@ -24,5 +24,11 @@ namespace AnimalShelterDesctopApp
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AnimalShelterAddVolunteerPage animalShelterAddVolunteerPage = new AnimalShelterAddVolunteerPage();
+            NavigationService.Navigate(animalShelterAddVolunteerPage);
+        }
     }
 }
