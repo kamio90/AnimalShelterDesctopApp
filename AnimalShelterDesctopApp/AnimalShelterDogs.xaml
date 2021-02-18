@@ -22,7 +22,7 @@
         </DataGrid>
         <TextBlock HorizontalAlignment="Left" Margin="324,342,0,0" TextWrapping="Wrap" Text="Psy" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Print"/>
         <Button Content="Dodaj Psa" HorizontalAlignment="Left" Margin="63.233,384,0,0" VerticalAlignment="Top" Width="106" Click="AddDogButtonClick" Background="White" Height="43" Padding="1" UseLayoutRounding="False" BorderThickness="0,0,0,1" SnapsToDevicePixels="True"/>
-        <Image Margin="10,10,560,95" Source="pexels-anna-shvets-4588052.jpg" Stretch="Fill"/>
+        <Image Margin="10,10,662,248" Source="pexels-anna-shvets-4588052.jpg" Stretch="Fill"/>
 
     </Grid>
 </Page>
