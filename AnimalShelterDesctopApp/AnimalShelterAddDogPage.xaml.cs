@@ -28,7 +28,7 @@ namespace AnimalShelterDesctopApp
 
         private void AddDogButtonClick(object sender, RoutedEventArgs e)
         {
-            if (TextBoxAge.Text == "" && TextBoxName.Text == "")
+            if (TextBoxAge.Text == "" || TextBoxName.Text == "")
             {
                 MessageBox.Show("Pola nie mogą być puste");
                 return;
