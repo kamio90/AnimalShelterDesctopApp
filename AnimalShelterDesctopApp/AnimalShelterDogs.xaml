@@ -12,16 +12,17 @@
         <CollectionViewSource x:Key="dogsViewSource" Source="{Binding Dogs, Source={StaticResource animalShelterDatabaseDataSet}}"/>
     </Page.Resources>
 
-    <Grid Background="White" DataContext="{StaticResource dogsViewSource}">
-        <DataGrid x:Name="dogsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="495,10,10,10" RowDetailsVisibilityMode="VisibleWhenSelected">
+    <Grid Background="#FFFBFDFF" DataContext="{StaticResource dogsViewSource}">
+        <DataGrid x:Name="dogsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="495,10,10,10" RowDetailsVisibilityMode="VisibleWhenSelected" Background="White" HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Black" RowBackground="White" SelectionChanged="dogsDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="idColumn" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="nameColumn" Binding="{Binding Name}" Header="Name" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="ageColumn" Binding="{Binding Age}" Header="Age" Width="SizeToHeader"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock HorizontalAlignment="Left" Margin="204,33,0,0" TextWrapping="Wrap" Text="Psy" VerticalAlignment="Top"/>
-        <Button Content="Dodaj Psa" HorizontalAlignment="Left" Margin="45,170,0,0" VerticalAlignment="Top" Width="75" Click="AddDogButtonClick"/>
+        <TextBlock HorizontalAlignment="Left" Margin="324,342,0,0" TextWrapping="Wrap" Text="Psy" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Print"/>
+        <Button Content="Dodaj Psa" HorizontalAlignment="Left" Margin="63.233,384,0,0" VerticalAlignment="Top" Width="106" Click="AddDogButtonClick" Background="White" Height="43" Padding="1" UseLayoutRounding="False" BorderThickness="0,0,0,1" SnapsToDevicePixels="True"/>
+        <Image Margin="10,10,560,95" Source="pexels-anna-shvets-4588052.jpg" Stretch="Fill"/>
 
     </Grid>
 </Page>

@@ -242,6 +242,7 @@
       <DependentUpon>AnimalShelterDatabaseModel.edmx</DependentUpon>
       <LastGenOutput>AnimalShelterDatabaseModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="pexels-anna-shvets-4588052.jpg" />
     <Resource Include="pexels-public-domain-pictures-40984.jpg" />
   </ItemGroup>
   <ItemGroup>
