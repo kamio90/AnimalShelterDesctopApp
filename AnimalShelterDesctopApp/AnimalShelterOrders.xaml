@@ -20,7 +20,7 @@
                 <DataGridTextColumn x:Name="clientsRefColumn" Binding="{Binding ClientsRef}" Header="Clients Ref" Width="SizeToHeader"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock HorizontalAlignment="Left" Margin="182,46,0,0" TextWrapping="Wrap" Text="Zamówienia" VerticalAlignment="Top" RenderTransformOrigin="-1.034,-0.639"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,155,0,0" TextWrapping="Wrap" Text="Zamówienia" VerticalAlignment="Top" RenderTransformOrigin="-1.034,-0.639" FontSize="72" FontFamily="Segoe UI Black"/>
 
     </Grid>
 </Page>
