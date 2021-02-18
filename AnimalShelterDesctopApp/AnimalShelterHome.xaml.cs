@@ -16,10 +16,13 @@ using System.Windows.Shapes;
 namespace AnimalShelterDesctopApp
 {
     /// <summary>
-    /// Logika interakcji dla klasy Page1.xaml
+    /// Logic for class Page1.xaml
     /// </summary>
     public partial class Page1 : Page
     {
+        /// <summary>
+        /// Constructor for class Page1.xaml
+        /// </summary>
         public Page1()
         {
             InitializeComponent();

@@ -9,7 +9,7 @@ using System.Windows;
 namespace AnimalShelterDesctopApp
 {
     /// <summary>
-    /// Logika interakcji dla klasy App.xaml
+    /// Logic for class App.xaml
     /// </summary>
     public partial class App : Application
     {

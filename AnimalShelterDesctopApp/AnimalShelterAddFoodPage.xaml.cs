@@ -16,11 +16,14 @@ using System.Windows.Shapes;
 namespace AnimalShelterDesctopApp
 {
     /// <summary>
-    /// Logika interakcji dla klasy AnimalShelterAddFoodPage.xaml
+    /// Logic for class AnimalShelterAddFoodPage.xaml
     /// </summary>
     public partial class AnimalShelterAddFoodPage : Page
     {
         private readonly AnimalShelterDatabaseEntities _databaseEntities = new AnimalShelterDatabaseEntities();
+        /// <summary>
+        /// Constructor for class AnimalShelterAddFoodPage.xaml
+        /// </summary>
         public AnimalShelterAddFoodPage()
         {
             InitializeComponent();
