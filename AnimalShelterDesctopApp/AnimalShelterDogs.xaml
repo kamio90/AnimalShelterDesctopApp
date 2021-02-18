@@ -13,7 +13,7 @@
     </Page.Resources>
 
     <Grid Background="#FFFBFDFF" DataContext="{StaticResource dogsViewSource}">
-        <DataGrid x:Name="dogsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="495,10,10,10" RowDetailsVisibilityMode="VisibleWhenSelected" Background="White" HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Black" RowBackground="White" SelectionChanged="dogsDataGrid_SelectionChanged">
+        <DataGrid x:Name="dogsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="495,10,10,10" RowDetailsVisibilityMode="VisibleWhenSelected" Background="White" HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Black" RowBackground="White">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="idColumn" Binding="{Binding Id}" Header="Id" IsReadOnly="True" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="nameColumn" Binding="{Binding Name}" Header="Name" Width="SizeToHeader"/>

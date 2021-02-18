@@ -9,12 +9,13 @@
       Title="AnimalShelterAddDogPage">
 
     <Grid Background="White">
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Dodaj Psa" VerticalAlignment="Top" Margin="10,10,0,0"/>
-        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="100,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Imie:" VerticalAlignment="Top" Width="120" Margin="100,123,0,0"/>
-        <TextBox x:Name="TextBoxAge" HorizontalAlignment="Left" Height="23" Margin="100,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Wiek:" VerticalAlignment="Top" Margin="100,255,0,0"/>
-        <Button Content="Dodaj Psa" HorizontalAlignment="Left" Margin="100,360,0,0" VerticalAlignment="Top" Width="75" Click="AddDogButtonClick"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Dodaj Psa" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="24" FontFamily="Segoe Print"/>
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="23" Margin="129,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBlock HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="Imie:" VerticalAlignment="Top" Width="120" Margin="129,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
+        <TextBox x:Name="TextBoxAge" HorizontalAlignment="Left" Height="23" Margin="528,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Wiek:" VerticalAlignment="Top" Margin="528,95,0,0" FontSize="24" FontFamily="Segoe Print"/>
+        <Button Content="Dodaj Psa" HorizontalAlignment="Left" Margin="321,142,0,0" VerticalAlignment="Top" Width="127" Click="AddDogButtonClick" Background="White" FontSize="22"/>
+        <Image Margin="171,205,235,10" Source="pexels-sebastian-coman-travel-3448793.jpg" Stretch="Fill"/>
 
     </Grid>
 </Page>
