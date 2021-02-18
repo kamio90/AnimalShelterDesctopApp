@@ -82,6 +82,9 @@
     <Compile Include="AnimalShelterAddDogPage.xaml.cs">
       <DependentUpon>AnimalShelterAddDogPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AnimalShelterAddVolunteerPage.xaml.cs">
+      <DependentUpon>AnimalShelterAddVolunteerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AnimalShelterClients.xaml.cs">
       <DependentUpon>AnimalShelterClients.xaml</DependentUpon>
     </Compile>
@@ -135,6 +138,10 @@
       <DependentUpon>AnimalShelterDatabaseModel.tt</DependentUpon>
     </Compile>
     <Page Include="AnimalShelterAddDogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimalShelterAddVolunteerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
